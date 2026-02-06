@@ -1,0 +1,100 @@
+# -----------------------------------------------------------------------------
+# Matte-black skin
+# -----------------------------------------------------------------------------
+
+text: &text "#EAEAEA"
+base: &base "#121212"
+overlay: &overlay "#232525"
+muted: &muted "#495156"
+amber: &amber "#FBBF24"
+amber-dark: &amber-dark "#D97706"
+green: &green "#22C55E"
+gold: &gold "#F1CB42"
+red-dark: &red-dark "#E62222"
+
+k9s:
+  body:
+    fgColor: *text
+    bgColor: *overlay
+    logoColor: *amber-dark
+  prompt:
+    fgColor: *amber-dark
+    bgColor: *base
+    suggestColor: *muted
+    border:
+      command: *gold
+      default: *amber-dark
+  info:
+    fgColor: *gold
+    sectionColor: *text
+  dialog:
+    fgColor: *text
+    bgColor: *overlay
+    buttonFgColor: *text
+    buttonBgColor: *overlay
+    buttonFocusFgColor: *base
+    buttonFocusBgColor: *gold
+    labelFgColor: *amber-dark
+    fieldFgColor: *green
+  frame:
+    border:
+      fgColor: *muted
+      focusColor: *amber
+    menu:
+      fgColor: *text
+      keyColor: *amber-dark
+      numKeyColor: *amber-dark
+    crumbs:
+      fgColor: *text
+      bgColor: *overlay
+      activeColor: *muted
+    status:
+      newColor: *amber-dark
+      modifyColor: *amber
+      addColor: *amber-dark
+      errorColor: *gold
+      pendingColor: *gold
+      highlightColor: *amber
+      killColor: *red-dark
+      completedColor: *muted
+    title:
+      fgColor: *text
+      bgColor: *overlay
+      highlightColor: *amber-dark
+      counterColor: *amber
+      filterColor: *amber-dark
+  views:
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - *amber-dark
+        - *amber
+      defaultChartColors:
+        - *amber-dark
+        - *amber
+    table:
+      fgColor: *text
+      bgColor: *base
+      cursorFgColor: *base
+      cursorBgColor: *amber
+      markColor: *green
+      header:
+        fgColor: *text
+        bgColor: *base
+        sorterColor: *amber
+    xray:
+      fgColor: *text
+      bgColor: *base
+      cursorColor: *overlay
+      graphicColor: *amber-dark
+      showIcons: false
+    yaml:
+      keyColor: *amber
+      colonColor: *muted
+      valueColor: *text
+    logs:
+      fgColor: *text
+      bgColor: *base
+      indicator:
+        fgColor: *text
+        bgColor: *base
